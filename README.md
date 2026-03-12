@@ -1,13 +1,12 @@
-from sklearn.cluster import KMeans
+import numpy as np
 
-# Data: Students marks
-X = [[20], [25], [30], [70], [75], [80]]
+scalar = np.array(5)
+print(scalar)
+print("Shape:", scalar.shape)
+tensor_3d = np.array([
+    [[1, 2], [3, 4]],
+    [[5, 6], [7, 8]]
+])
 
-# Create model (2 groups)
-model = KMeans(n_clusters=2, random_state=0)
-
-# Train model
-model.fit(X)
-
-# Output groups
-print(model.labels_)
+print(tensor_3d)
+print("Shape:", tensor_3d.shape)
